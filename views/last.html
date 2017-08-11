@@ -1,0 +1,40 @@
+<ion-content>
+    <ion-refresher
+    pulling-text="下拉刷新..."
+    on-refresh="doRefresh()">
+    </ion-refresher>
+    <ion-header-bar align-title="center" class="bar-dark">
+
+        <h1 class="title">微信</h1>
+        <div class="buttons">
+            <span class="iconfont icon-jia"></span>
+        </div>
+    </ion-header-bar>
+    <div class="list list-inset">
+        <label class="item item-input">
+            <i  class="iconfont icon-chaxun placeholder-icon"></i>
+            <input type="text" placeholder="搜索">
+            <i class="iconfont icon-yuyin placeholder-icon"></i>
+        </label>
+    </div>
+    <ion-list>
+        <ion-item ng-repeat="i in last" class="item item-avatar item-remove-animate">
+            <img src="{{i.img}}">
+            <span class="timespan">{{i.time}}</span>
+            <h3>{{i.name}}</h3>
+            <p>{{i.content}}</p>
+
+            <!--<ion-option-button class="button-calm" ng-click="share(item)">-->
+            <!--Share-->
+            <!--</ion-option-button>-->
+            <!--<ion-option-button class="ion-minus-circled" ng-click="onItemDelete(item)">-->
+            <!--</ion-option-button>-->
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+<!--
+
+show-delete="data.showDelete"
+item="item"
+href="#/item/{{item.id}}"-->

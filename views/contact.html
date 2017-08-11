@@ -1,0 +1,43 @@
+<ion-content>
+    <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()"></ion-refresher>
+    <ion-header-bar align-title="center" class="bar-dark">
+        <!--<div class="buttons">-->
+        <!--<button class="button" ng-click="doSomething()">左侧按钮</button>-->
+        <!--</div>-->
+        <!--<ion-refresher pulling-text="下拉刷新" on-refresh="vm.doRefresh()"></ion-refresher>-->
+
+        <h1 class="title">微信</h1>
+        <div class="buttons">
+            <span class="iconfont icon-tianjiahaoyou"></span>
+        </div>
+    </ion-header-bar>
+    <!--<div class="margin-top"></div>-->
+    <div class="list list-inset">
+        <label class="item item-input">
+            <i  class="iconfont icon-chaxun placeholder-icon"></i>
+            <input type="text" placeholder="搜索">
+            <i class="iconfont icon-yuyin placeholder-icon"></i>
+        </label>
+    </div>
+    <ion-list >
+        <ion-item><i class="iconfont icon-tianjiahaoyou"></i>新的朋友</ion-item>
+        <ion-item><i class="iconfont icon-pengyoutuijian"></i>群聊</ion-item>
+        <ion-item><i class="iconfont icon-xihuan"></i>标签</ion-item>
+        <ion-item><i class="iconfont icon-shenghuo"></i>公众号</ion-item>
+        <ion-item class="item item-divider"></ion-item>
+        <ion-item ng-repeat="it in contact_data">
+            <!--<img ui-sref="{{item.img}}">-->
+            <h3>{{it.name}}</h3>
+            <!--<p>{{item.content}}</p>-->
+            <!--<span>{{item.time}}</span>-->
+            <!--<ion-option-button class="button-calm" ng-click="share(item)">-->
+            <!--Share-->
+            <!--</ion-option-button>-->
+            <!--<ion-option-button class="ion-minus-circled" ng-click="onItemDelete(item)">-->
+            <!--</ion-option-button>-->
+        </ion-item>
+    </ion-list>
+</ion-content>
+<!--<ion-infinite-scroll ng-if="vm.moredata" on-infinite="vm.loadMore()" distance="1%" ></ion-infinite-scroll>-->
+<!-- ion-infinite-scroll 上拉加载数据指令 distance默认1% nf-if的值为false时，就禁止执行on-infinite  -->
+

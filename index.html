@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/ionic.min.css">
+    <link rel="stylesheet" href="css/wechat.css">
+    <title>wechat</title>
+</head>
+<body ng-controller="commonCtrl">
+<!--<body>-->
+<!--<ion-nav-view></ion-nav-view>-->
+<!--<div ui-view="" class="slide-left-right"></div>-->
+<ion-nav-view animation="slide-left-right">
+</ion-nav-view>
+<ion-tabs class="tabs tabs-icon-top" id="Home">
+    <ion-tab  ng-repeat="item in basiclist_data" title="{{item.name}}" icon-on="iconfont {{item.on_icon}} greenicon"
+             icon-off="iconfont {{item.icon}}" ui-sref="{{item.href}}" >
+    </ion-tab>
+</ion-tabs>
+<script src="js/ionic.bundle.min.js"></script>
+<script src="js/wechat.js"></script>
+<script src="js/controller.js"></script>
+</body>
+</html>

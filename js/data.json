@@ -1,0 +1,24 @@
+{
+  "basic_data" : [
+  {"href":"last","icon":"icon-weixin-copy","on_icon":"icon-weixin","name":"微信"},
+  {"href":"contact","icon":"icon-address-book","on_icon":"icon-tongxunlu","name":"通讯录"},
+  {"href":"find","icon":"icon-faxian1","on_icon":"icon-faxian","name":"发现"},
+  {"href":"me","icon":"icon-wo","on_icon":"icon-wo1","name":"我"}
+],
+  "lastlist_data" : [
+    { "id": 1, "img" : "img/1.jpg", "name" : "蹲墙角画圈圈","time":"08-03 09:32" ,"content":"犯我德邦者,虽远必诛"},
+    { "id": 2, "img" : "img/2.jpg", "name" : "蹲墙角画圈圈","time":"08-03 09:32" ,"content":"是时候表演真正的技术了"},
+    { "id": 3, "img" : "img/3.jpg", "name" : "蹲墙角画圈圈","time":"08-03 09:32" ,"content":"我们德玛西亚人从不退缩"},
+    { "id": 4, "img" : "img/4.jpg", "name" : "蹲墙角画圈圈","time":"08-03 09:32" ,"content":"人终有一死,但有的人需要一点小小的帮助"},
+    { "id": 5, "img" : "img/5.jpg", "name" : "蹲墙角画圈圈","time":"08-03 09:32" ,"content":"肮脏的蠢蛋"},
+    { "id": 6, "img" : "img/6.jpg", "name" : "蹲墙角画圈圈","time":"08-03 09:32" ,"content":"人在塔在"}
+  ],
+  "contact_data" : [
+    { "id": 1, "img" : "img/7.jpg", "name" : "蹲墙角画圈圈","time":"08-03 09:32" ,"content":"犯我德邦者,虽远必诛"},
+    { "id": 2, "img" : "img/8.jpg", "name" : "蹲墙角画圈圈","time":"08-03 09:32" ,"content":"是时候表演真正的技术了"},
+    { "id": 3, "img" : "img/9.jpg", "name" : "蹲墙角画圈圈","time":"08-03 09:32" ,"content":"我们德玛西亚人从不退缩"},
+    { "id": 4, "img" : "img/10.jpg", "name" : "蹲墙角画圈圈","time":"08-03 09:32" ,"content":"人终有一死,但有的人需要一点小小的帮助"},
+    { "id": 5, "img" : "img/11.jpg", "name" : "蹲墙角画圈圈","time":"08-03 09:32" ,"content":"肮脏的蠢蛋"},
+    { "id": 6, "img" : "img/12.jpg", "name" : "蹲墙角画圈圈","time":"08-03 09:32" ,"content":"人在塔在"}
+  ]
+}
