@@ -31,6 +31,11 @@
             <!--</ion-option-button>-->
         </ion-item>
     </ion-list>
+    <ion-tabs class="tabs tabs-icon-top" id="Home">
+        <ion-tab  ng-repeat="item in basiclist_data" title="{{item.name}}" icon-on="iconfont {{item.on_icon}} greenicon"
+                  icon-off="iconfont {{item.icon}}" ui-sref="{{item.href}}" >
+        </ion-tab>
+    </ion-tabs>
 </ion-content>
 
 <!--

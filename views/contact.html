@@ -37,6 +37,11 @@
             <!--</ion-option-button>-->
         </ion-item>
     </ion-list>
+    <ion-tabs class="tabs tabs-icon-top" id="Home">
+        <ion-tab  ng-repeat="item in basiclist_data" title="{{item.name}}" icon-on="iconfont {{item.on_icon}} greenicon"
+                  icon-off="iconfont {{item.icon}}" ui-sref="{{item.href}}" >
+        </ion-tab>
+    </ion-tabs>
 </ion-content>
 <!--<ion-infinite-scroll ng-if="vm.moredata" on-infinite="vm.loadMore()" distance="1%" ></ion-infinite-scroll>-->
 <!-- ion-infinite-scroll 上拉加载数据指令 distance默认1% nf-if的值为false时，就禁止执行on-infinite  -->

@@ -46,8 +46,6 @@
         // };
     });
     app.controller('contactCtrl',function ($scope,$http) {
-        var home = document.getElementById("Home");
-            home.style.display = "block";
         $scope.doRefresh = function() {
             $http.get('js/newdata.json')
                 .success(function(newItems) {
@@ -61,12 +59,10 @@
         // $scope.contactlist = $scope.contact_data;
     });
     app.controller('findCtrl',function ($scope) {
-        var home = document.getElementById("Home");
-            home.style.display = "block";
+
     });
     app.controller('meCtrl',function ($scope) {
-        var home = document.getElementById("Home");
-        home.style.display = "block";
+
     });
     app.controller('settingCtrl',function ($scope) {
 
