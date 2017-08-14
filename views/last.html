@@ -23,21 +23,20 @@
             <span class="timespan">{{i.time}}</span>
             <h3>{{i.name}}</h3>
             <p>{{i.content}}</p>
-
-            <!--<ion-option-button class="button-calm" ng-click="share(item)">-->
-            <!--Share-->
-            <!--</ion-option-button>-->
-            <!--<ion-option-button class="ion-minus-circled" ng-click="onItemDelete(item)">-->
-            <!--</ion-option-button>-->
+            <ion-option-button class="button-assertive" ng-click="onItemDelete(i)">
+                删除
+            </ion-option-button>
+            <ion-option-button class="button-stable" ng-click="read(item)">
+                标为已读
+            </ion-option-button>
         </ion-item>
     </ion-list>
-    <ion-tabs class="tabs tabs-icon-top" id="Home">
-        <ion-tab  ng-repeat="item in basiclist_data" title="{{item.name}}" icon-on="iconfont {{item.on_icon}} greenicon"
-                  icon-off="iconfont {{item.icon}}" ui-sref="{{item.href}}" >
-        </ion-tab>
-    </ion-tabs>
 </ion-content>
-
+<!--<ion-tabs class="tabs tabs-icon-top" id="Home">-->
+    <!--<ion-tab  ng-repeat="item in basiclist_data" title="{{item.name}}" icon-on="iconfont {{item.on_icon}} greenicon"-->
+              <!--icon-off="iconfont {{item.icon}}" ui-sref="{{item.href}}" >-->
+    <!--</ion-tab>-->
+<!--</ion-tabs>-->
 <!--
 
 show-delete="data.showDelete"

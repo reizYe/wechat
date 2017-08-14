@@ -1,1 +1,36 @@
-<h1>联系人详情</h1>
+<ion-content>
+    <ion-header-bar align-title="center" class="bar-dark">
+        <div class="buttons" ui-sref="contact">
+            <span class="iconfont icon-fanhui">通讯录</span>
+        </div>
+        <h1 class="title">详细资料</h1>
+        <div class="buttons">
+            <span class="iconfont con-gerenshezhi"></span>
+        </div>
+    </ion-header-bar>
+    <div class="margin-top"></div>
+    <ion-list class="myion">
+        <ion-item class="item item-divider"></ion-item>
+        <ion-item class="item item-icon-right userinfo">
+            <img class="userimg" src="{{user.img}}" alt="">
+            <div>
+               <span>{{user.name}}</span> <br>
+               <span>微信号:{{user.number}}</span> <br>
+               <span>昵称</span> <br>
+            </div>
+        </ion-item>
+        <ion-item class="item item-divider"></ion-item>
+        <ion-item class="item item-icon-right">设置备注和标签 <span class="icon"> ></span></ion-item>
+        <ion-item class="item item-icon-right">电话号码 <span class="icon"> ></span></ion-item>
+        <ion-item class="item item-divider"></ion-item>
+        <ion-item class="item item-icon-right">地区 <span class="icon"> ></span></ion-item>
+        <!--<ion-item class="item item-divider"></ion-item>-->
+        <ion-item class="item item-icon-right">个人相册 <span class="icon"> ></span></ion-item>
+        <ion-item class="item item-icon-right">更多<span class="icon"> ></span></ion-item>
+        <ion-item class="item item-divider"></ion-item>
+    </ion-list>
+    <button class="button button-block button-balanced">发消息</button>
+    <button class="button button-block button-stable">视频聊天</button>
+    <!--<button  class="button button-block button-stable">退出登录</button>-->
+    <!--<button class="button button-block button-stable">视频聊天</button>-->
+</ion-content>

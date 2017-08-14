@@ -19,16 +19,25 @@
             <i class="iconfont icon-yuyin placeholder-icon"></i>
         </label>
     </div>
-    <ion-list >
+    <ion-list>
         <ion-item><i class="iconfont icon-tianjiahaoyou"></i>新的朋友</ion-item>
         <ion-item><i class="iconfont icon-pengyoutuijian"></i>群聊</ion-item>
         <ion-item><i class="iconfont icon-xihuan"></i>标签</ion-item>
         <ion-item><i class="iconfont icon-shenghuo"></i>公众号</ion-item>
-        <ion-item class="item item-divider"></ion-item>
-        <ion-item ng-repeat="it in contact_data">
-            <!--<img ui-sref="{{item.img}}">-->
-            <h3>{{it.name}}</h3>
-            <!--<p>{{item.content}}</p>-->
+        <!--<ion-item class="item item-divider"></ion-item>-->
+        <ion-item ng-repeat="it in contact_data" class="contactlist">
+            <ion-item class="item item-divider">{{it.index}}</ion-item>
+            <ion-list>
+                <ion-item ng-repeat="i in it.list" class="item item-avatar item-remove-animate" href="#/contact/contactdata/{{i.id}}">
+                    <img src="{{i.img}}">
+                    <h3>{{i.name}}</h3>
+                    <p>{{i.content}}</p>
+                    <ion-option-button class="button-stable" ng-click="modify(item)">
+                        备注
+                    </ion-option-button>
+                </ion-item>
+            </ion-list>
+
             <!--<span>{{item.time}}</span>-->
             <!--<ion-option-button class="button-calm" ng-click="share(item)">-->
             <!--Share-->
@@ -37,12 +46,13 @@
             <!--</ion-option-button>-->
         </ion-item>
     </ion-list>
-    <ion-tabs class="tabs tabs-icon-top" id="Home">
-        <ion-tab  ng-repeat="item in basiclist_data" title="{{item.name}}" icon-on="iconfont {{item.on_icon}} greenicon"
-                  icon-off="iconfont {{item.icon}}" ui-sref="{{item.href}}" >
-        </ion-tab>
-    </ion-tabs>
 </ion-content>
+<div class="margin-bottom"></div>
+<!--<ion-tabs class="tabs tabs-icon-top" id="Home">-->
+    <!--<ion-tab  ng-repeat="item in basiclist_data" title="{{item.name}}" icon-on="iconfont {{item.on_icon}} greenicon"-->
+              <!--icon-off="iconfont {{item.icon}}" ui-sref="{{item.href}}" >-->
+    <!--</ion-tab>-->
+<!--</ion-tabs>-->
 <!--<ion-infinite-scroll ng-if="vm.moredata" on-infinite="vm.loadMore()" distance="1%" ></ion-infinite-scroll>-->
 <!-- ion-infinite-scroll 上拉加载数据指令 distance默认1% nf-if的值为false时，就禁止执行on-infinite  -->
 
